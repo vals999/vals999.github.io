@@ -6,7 +6,7 @@ function validateForm() {
   const email = document.getElementById("emailId")
   const textArea = document.getElementById("textAreaId")
   //expresiones regulares para validar el nombre, apellido y email. Nombre y apellido solo aceptan letras, el email tiene que tener un formato de email
-  const nameRegex = /^[a-zA-Z]+$/;      
+  const nameRegex = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;      
   const emailRegex = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
 
   //variables que guardan lo ingresado en el formulario
