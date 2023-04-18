@@ -224,6 +224,10 @@ html {
         height: 75px;
     }
 
+    .arrow-personal{
+        width: 40%;
+    }
+
 }
 
 @media print {
