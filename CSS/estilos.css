@@ -219,6 +219,11 @@ html {
         margin-bottom: 30px;
     }
 
+    .picture-img{
+        width: 75px;
+        height: 75px;
+    }
+
 }
 
 @media print {
