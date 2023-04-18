@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+html {
+     overflow-x: hidden;
+  }  
+
+.body{
+    font-family: 'Poppins', sans-serif;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;  
+    position: relative;
+    padding-top: 50px;
+}
+
+#titles{
+    padding-top: 20px;
+}
+.navbar-nav .nav-link:active {
+    color: #2f57a1;
+    border-bottom: 2px solid #2f57a1;
+}
+  
+.navbar-nav .nav-link:hover {
+    color: #2f57a1;
+    border-bottom: 2px solid #2f57a1;
+}
+
+.intro {
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../images/laptop-2838921_1920.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 500px; 
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%); 
+  }
+  
+.btn-circle {
+    border-radius: 50%;
+  }
+
+.caract_icons{
+    text-align: center;
+}
+.caract_icon, .prices_icon{
+   width: 60px;
+} 
+#sec_prices{
+    background-color: #ecf0e8;
+}
+#invis{
+    visibility: hidden;
+}
+.personal{
+    padding: 50px;
+    background-color: #fff;
+}
+
+.personal-container{
+    display:grid;
+    grid-template-columns: 50px 1fr 50px;
+    gap: 1em;
+    align-items: center;
+}
+
+.body-personal{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.body-personal--show{
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.arrow-personal{
+    width: 90%;
+    cursor: pointer;
+    transform: scale(1.0);
+    transition: transform 0.5s ease-in-out;
+}
+.arrow-personal:hover{
+    transform: scale(1.2);    
+}
+
+
+.subtitle{
+    color: #000000;
+}
+
+.info-paragraph{
+    color: #000000;
+}
+
+.picture-img{
+    
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+
+.questions{
+    padding: 50px;
+    background-color: #ecf0e8;
+}
+
+.title-accordion{
+    padding: 50px;
+    font-size:xx-large;
+    color: #000000;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.accordion{
+    margin-bottom: 40px; 
+}
+
+.footer {
+    background-color: rgb(27, 38, 49);
+    color: #ecf0e8;
+    text-transform: capitalize;
+    padding: 30px 0;
+}
+
+.footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+.footer-links{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-links h4{
+    font-size: 20px;
+    color:aliceblue;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #fff178;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-links ul li{
+    color:rgb(252, 252, 158);
+    padding: 0px;
+}
+
+.footer-links ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #BBBBBB;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover{
+    color: #ffffff;
+    padding-left: 6px;
+}
+
+.social-link a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all .5s ease;
+}
+
+
+.social-link a:hover{
+    background-color: #fff178;
+    padding-left: 2px;
+}
+
+.footer-fo p{
+    margin-top: 30px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: small;
+    color:#ffffff;
+}
+
+@media(max-width:991px){
+    .footer-row{
+        text-align: center;
+    }
+
+    .footer-links{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media print {
+    #printButton {
+      display: none;
+    }
+  }
+
+#scroll{
+    max-height: 500px;
+    overflow: auto;
+}
