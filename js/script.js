@@ -25,7 +25,7 @@ function validateForm() {
     document.getElementById("nameError").innerHTML = "";
     document.getElementById("surnameError").innerHTML = "";
     document.getElementById("emailError").innerHTML = "";
-    document.getElementById("textAreaId").innerHTML = "";
+    document.getElementById("textAreaError").innerHTML = "";
 
     //contador de errores
     let errorsCount = 0;
