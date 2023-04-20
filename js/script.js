@@ -20,10 +20,12 @@ function validateForm() {
     document.getElementById("nameId").classList.remove("border-danger");
     document.getElementById("surnameId").classList.remove("border-danger");
     document.getElementById("emailId").classList.remove("border-danger");
+    document.getElementById("textAreaId").classList.remove("border-danger");
     //remueve los mensajes de error
     document.getElementById("nameError").innerHTML = "";
     document.getElementById("surnameError").innerHTML = "";
     document.getElementById("emailError").innerHTML = "";
+    document.getElementById("textAreaId").innerHTML = "";
 
     //contador de errores
     let errorsCount = 0;
@@ -44,6 +46,11 @@ function validateForm() {
       errorsCount++;
       document.getElementById("emailError").innerHTML = "Verifique su email";
       document.getElementById("emailId").classList.add("border-danger")
+    }
+    if (textArea.value === "" || textArea.value == null) {
+      errorsCount++;
+      document.getElementById("textAreaError").innerHTML = "Ingrese un mensaje";
+      document.getElementById("textAreaId").classList.add("border-danger")
     }
     //si hay errores no envia el formulario
     if (errorsCount > 0) {
